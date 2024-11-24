@@ -1,0 +1,120 @@
+#Contact{
+    scroll-margin-top: 85px;
+
+}
+.contactMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+
+}
+.contactTitle{
+    margin-top: 20px;
+    font-size: 35px;
+    background:linear-gradient(212deg, rgba(2,0,36,1) 0%, rgba(32,32,196,1) 6%, rgba(0,212,255,1) 78%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+.contactLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+}
+.contactLeft h1{
+    font-size: 35px;
+    font-weight: 500;
+    background:linear-gradient(212deg, rgba(2,0,36,1) 0%, rgba(32,32,196,1) 6%, rgba(0,212,255,1) 78%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+.contactLeft p{
+    max-width: 550px;
+    font-size: 16px;
+    line-height: 35px;
+}
+.contactDetails{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.contactDetails svg{
+    font-size: 22px;
+    font-weight: 500;
+}
+.contactTitle h1{
+    padding: 0 30px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.contactMeSubDiv {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 95%;
+    margin: 0 auto;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+form.contactRight,.contactSection {
+    max-width: 330px;
+}
+.contactRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.contactDetails {
+    display: flex;
+    gap: 20px;
+}
+.contactRight{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactRight label{
+    font-weight: 500;
+    font-size: 20px;
+    /* color:  rgba(32,32,196,1); */
+}
+.contactRight input{
+    border: none;
+    /* width: 700px; */
+    height: 48px;
+    padding-left: 20px;
+    border-radius: 4px;
+    width: 85%;
+}
+.contactRight textarea{
+    border: none;
+    padding: 18px;
+    width: 85%;
+    height:80px;
+    border-radius: 4px;
+}
+.contactRight .submitButton{
+    border: none;
+    color: white;
+    border-radius: 50px;
+    background:linear-gradient(212deg, rgba(2,0,36,1) 0%, rgba(32,32,196,1) 6%, rgba(0,212,255,1) 78%);
+    font-size: 22px;
+    padding: 10px 40px;
+    cursor: pointer;    
+    transition: 0.3s ;
+}
+.contactRight .submitButton:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}

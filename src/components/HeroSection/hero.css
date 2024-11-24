@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#Home{
+    scroll-margin-top: 90px;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 91px;
+
+}
+.hero p{
+    padding-left: 20px;
+}
+.resumeButtonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.resumeButtonContainer button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.resumeButtonContainer button:hover{
+    
+    transform: scale(1.03) ;
+}
+.myResumeButton{
+    background: transparent;
+}
+.myResumeButton:hover{
+    border: 2px solid rgba(32,32,196,1);
+}
+.connectButton{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background:linear-gradient(212deg, rgba(2,0,36,1) 0%, rgba(32,32,196,1) 6%, rgba(0,212,255,1) 78%);
+    border: 1px solid;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.connectButton:hover{
+    border: 1px solid ;
+}
+.hero span{
+    font-weight: bold;
+    font-size: 20px;
+    background:linear-gradient(212deg, rgba(2,0,36,1) 0%, rgba(32,32,196,1) 6%, rgba(0,212,255,1) 78%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.profileImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.profileImgDiv{
+    height: 200px;
+    width: 200px;
+}
+button.myResumeButton {
+background: white;
+}   
+@media (max-width: 768px) {
+   
+}

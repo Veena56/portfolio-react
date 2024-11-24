@@ -1,0 +1,63 @@
+#Services{
+    scroll-margin-top: 90px;
+
+}
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid white; */
+}
+.serviceFormat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    max-width: 250px;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+.serviceFormat:hover{
+    /* border: 2px solid rgba(2,0,36,1) ; */
+    background-image: linear-gradient(212deg, rgba(2, 0, 36, 0.678) 0%, rgba(32, 32, 196, 0.486) 6%, rgba(0, 213, 255, 0.356) 78%);
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+.servicesTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.servicesContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        /* width: 90%; */
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+}
+.servicesContainer h2{
+    font-size: 20px;
+    background:linear-gradient(212deg, rgba(2,0,36,1) 0%, rgba(32,32,196,1) 6%, rgba(0,212,255,1) 78%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.servicesContainer h3{
+    font-size: 20px;
+
+}
+.servicesReadmore svg{
+    font-size: 20px;
+    font-weight: 600;
+}
+.servicesReadmore {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    cursor: pointer;
+}

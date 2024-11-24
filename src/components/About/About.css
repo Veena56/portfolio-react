@@ -1,0 +1,99 @@
+.aboutImg{
+    height: 200px;
+    width: 200px;
+}
+#AboutMe{
+    scroll-margin-top: 80px;
+}
+.aboutImg img{
+    height: 100%;
+    width: 100%;
+}
+.aboutSkillsContainer{
+    display: flex;
+    flex-direction: column;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutLeft img{
+    width: 100%;
+    height: 100%;
+}
+.aboutLeft{
+    height: 200px;
+    width: 200px;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.aboutSections {
+    display: flex;
+    width: 100%;
+    /* max-width: 1200px;  */
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.aboutLeft {
+    flex: 1; /* Take up space in flex container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about h1{
+    font-size: 21px;
+}
+
+.aboutLeft img {
+    height: 100%;
+    width: 100%;
+}
+.aboutProPic{
+    height: 200px;
+    width: 200px;
+}
+.aboutRight {
+    flex: 2; /* Take up more space than the image */
+    padding-left: 20px; /* Space between image and skills */
+}
+
+.aboutPara {
+    margin-bottom: 20px;
+}
+
+.aboutSkillsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; /* Space between skills */
+    gap: 4px;
+}
+.skill hr{
+    height: 4px;
+    outline: none;
+    border: none;
+    width: 50%;
+    border-radius: 50%;
+    background:linear-gradient(212deg, rgba(2,0,36,1) 0%, rgba(32,32,196,1) 6%, rgba(0,212,255,1) 78%);
+}
+.skill:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+    .aboutSections {
+        gap: 2rem;
+    }
+}

@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+body{
+    height: 100vh;
+    background: #161513;
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+.navMenu li a{
+    color: white;
+    text-decoration: none;
+}
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 10px; */
+    /* border: 1px solid black; */
+    padding: 17px 0px;    ;
+    /* background-color: black; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: fixed;
+    /* height: 100px; */
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #161513;
+}
+
+.navMenu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    gap: 30px;
+    cursor: pointer;
+}
+.navMenu li{
+    position: relative;
+    overflow: hidden;
+    padding: 12px 25px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer
+}
+.navMenu li:active::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: ripple 0.6s linear;
+}
+.underLine {
+    position: relative; /* Necessary for positioning the ::after element */
+    display: inline-block; /* Ensures the underline adjusts to the text width */
+    font-weight: 600; /* Optional for a bold look */
+}
+
+.underLine::after {
+    content: ""; /* Creates the pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjusts the gap between text and underline */
+    width: 100%; /* Matches the text's width */
+    height: 3px; /* Thickness of the underline */
+    /* background-color: #ff5722; */
+    background:linear-gradient(212deg, rgba(2,0,36,1) 0%, rgba(32,32,196,1) 6%, rgba(0,212,255,1) 78%);
+    border-radius: 2px; /* Optional for a rounded underline */
+}
+
+@keyframes ripple {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+    }
+}
+.navBarImg img{
+    height: 100%;
+    width: 100%;
+}
+.navBarImg {
+    height: 70px;
+}
+.navConnect{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background:linear-gradient(212deg, rgba(2,0,36,1) 0%, rgba(32,32,196,1) 6%, rgba(0,212,255,1) 78%);
+    border: 1px solid;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.navConnect:hover{
+    transform: scale(1.03)  ;
+}
+.menuClose{
+    display: none;  
+}
+svg.menuOpen {
+    display: none;
+}
+/* Show and hide classes */
+.show {
+    opacity: 1;
+    pointer-events: auto; /* Allow interactions */
+  }
+  
+  .hide {
+    opacity: 0;
+    pointer-events: none; /* Disable interactions */
+  }
+@media (max-width: 988px) {
+    .navConnect{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    /* .navBarImg {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    } */
+  
+    svg.menuOpen {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        z-index: 6;
+        transition: all 0.5s ease;
+        position: absolute;
+        top: 18px;
+        right: 43px;
+    }
+    svg.menuOpen.hide {
+      opacity: 0;
+      pointer-events: none;
+    }
+  
+    .menuClose {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 30px;
+      z-index: 6;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.5s ease; /* Smooth animation */
+    }
+  
+    .menuClose.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  
+    .navMenu {
+      position: fixed;
+      top: 0;
+      right: -100%; /* Hidden by default */
+      height: 100%;
+      width: 250px;
+      background-color: #161513;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding-top: 70px;
+      gap: 20px;
+      transition: all 0.5s ease; /* Smooth slide-in/out */
+      z-index: 5;
+    }
+  
+    .navMenu.show {
+      right: 0; /* Slide in */
+    }
+  
+    .navMenu li {
+      font-size: 18px;
+      padding: 10px 20px;
+      width: 100%;
+      text-align: left;
+      border-radius: 6px;
+    }
+  
+    .navMenu li:hover {
+      background-color: rgba(255, 255, 255, 0.1); /* Optional hover effect */
+    }
+  
+    .navConnect {
+      display: none; /* Hide Connect button on small screens */
+    }
+  }
+  
