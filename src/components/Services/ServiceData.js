@@ -13,24 +13,10 @@ const ServiceData=[
     },
     {
         sNo:"03",
-        sName:"Library Management",
-        sDesc:"A comprehensive Library Management System aimed at streamlining book borrowing, returns, and cataloging processes. The project will focus on delivering an intuitive interface for users and a robust backend for managing library operations efficiently.",
+        sName:"Admin Dashboard",
+        sDesc:"An educational dashboard that allows admins to create exams, courses, and tests, which are displayed on the student dashboard. My contributions included developing update forms for tests, modifying APIs based on requirements, and ensuring responsiveness for exam, course, and test creation and update forms.",
         technologiesUsed:"React JS, node JS"
     },
-    // {
-    //     sNo:"04",
-    //     sName:"App Design",
-    //     sDesc:"App Design is the process of building, programming..."
-    // },
-    // {
-    //     sNo:"05",
-    //     sName:"Digital Marketing",
-    //     sDesc:"Digital Marketing is the process of building, programming..."
-    // }, 
-    // {
-    //     sNo:"04",
-    //     sName:"Content Writing",
-    //     sDesc:"Content Writing is the process of building, programming..."
-    // }
+    
 ]
 export default ServiceData;

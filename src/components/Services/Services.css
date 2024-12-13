@@ -11,12 +11,13 @@
 .serviceFormat {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     gap: 20px;
     max-width: 250px;
     padding: 1rem;
     border: 1px solid white;
     border-radius: 15px;
+    height: 382px;
 }
 .serviceFormat:hover{
     /* border: 2px solid rgba(2,0,36,1) ; */
