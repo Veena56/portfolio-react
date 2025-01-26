@@ -5,7 +5,8 @@ import Footer from './components/Footer/Footer';
 import Hero from './components/HeroSection/Hero';
 import MyWork from './components/MyWork/MyWork';
 import Services from './components/Services/Services';
-import Navbar from './components/navbar/navbar';
+import Navbar from './components/navbar/Nav'; 
+
 
 function App() {
   return (
