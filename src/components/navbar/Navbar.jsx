@@ -2,9 +2,6 @@ import React, { useRef, useState } from 'react';
 import './navbar.css'
 import logo2 from '../../assets/transparent-background-logo-8.png'
 import { CiMenuFries } from "react-icons/ci";
-import { IoMdClose } from "react-icons/io";
-
-
 const Navbar = () => {
   
   const [menu, setMenu] = useState("");
