@@ -1,9 +1,10 @@
 import React from 'react';
-import './hero.css'
-import profileImg from '../assets/PortFolioProfile.jpeg'
-import passPortPic from '../assets/PassPortAI.png'
+import './hero.css';
+import profileImg from '../assets/PortFolioProfile.jpeg';
+import passPortPic from '../assets/PassPortAI.png';
 
 const Hero = () => {
+  // const myResume = '/Resume-Veena Ragi.pdf';
   const handleSetMenu = (attribute) => {
     console.log(attribute, "this is what we are setting");
     // setMenu(attribute)
@@ -12,6 +13,9 @@ const Hero = () => {
     section.scrollIntoView({behavior:'smooth'})
    }
   }
+  const handleViewPdf = () => {
+    window.open("/portfolio-react/Resume-VeenaRagi.pdf", "_blank"); // Opens in a new tab
+  };
   return (
     <div className='hero' id='Home'>
       <div className='profileImgDiv'>
@@ -21,7 +25,7 @@ const Hero = () => {
       <p>I am Web Developer from Hyderabad, India with 6 months of experience.</p>
       <div className='resumeButtonContainer'>
       <button className='connectButton' onClick={() => handleSetMenu("Contact")}>Connect With Me</button>
-      <button className='myResumeButton'>My Resume</button>
+      <button className='myResumeButton' onClick={handleViewPdf} >My Resume</button>
       </div>
 
     </div>
