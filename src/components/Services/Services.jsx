@@ -1,7 +1,6 @@
 import React from 'react';
 import './Services.css'
 import ServiceData from './ServiceData';
-import { FaArrowRight } from "react-icons/fa6";
 const Services = () => {
   return (
     <div className='services' id='Services'>
@@ -15,11 +14,8 @@ const Services = () => {
               <p>{item.sDesc}</p>
               <div className='servicesReadmore'>
                 <p style={{fontWeight:"600"}}>{item.technologiesUsed}</p>
-                
-                {/* <FaArrowRight /> */}
               </div>
             </div>
-           
           ))}
         </div>
       </div>

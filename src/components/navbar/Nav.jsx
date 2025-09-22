@@ -38,7 +38,7 @@ const Navbar = () => {
         {/* <li onClick={(e) => handleSetMenu("Portfolio",e)}><a href='portfolio'><p className={menu === "Portfolio" ? "underLine" : ""} >Portfolio</p></a></li> */}
        <li onClick={(e) => handleSetMenu("Contact",e)}> <a href='contactMe'><p className={menu === "Contact" ? "underLine" : ""} >Contact</p></a></li> 
       </ul>
-      <div className='navConnect' onClick={() => handleSetMenu("Contact")}>Connect With Me</div>
+      <div className='navConnect' onClick={(e) => handleSetMenu("Contact",e)}>Connect With Me</div>
     </div>
   );
 }

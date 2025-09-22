@@ -36,6 +36,7 @@
 }
 .myResumeButton{
     background: transparent;
+    padding: 12px !important;
 }
 .myResumeButton:hover{
     border: 2px solid rgba(32,32,196,1);

@@ -3,9 +3,9 @@ import './MyWork.css'
 const MyWork = () => {
   return (
     <div className='myWork'>
-    <div className='myWorkTitle'>
+    {/* <div className='myWorkTitle'>
     MyWork
-    </div>
+    </div> */}
     <div className='myWorkContainer'>
         
     </div>

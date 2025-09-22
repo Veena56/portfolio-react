@@ -57,7 +57,7 @@ const ChatBot = () => {
                 <div className='chatFooter'>
                     <ChatForm setChatHistory={setChatHistory} chatHistory={chatHistory} 
                      generateBotResponse={generateBotResponse}
-                        
+                             
                      />
                 </div>
             </div>

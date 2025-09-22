@@ -17,6 +17,12 @@ const ServiceData=[
         sDesc:"An educational dashboard that allows admins to create exams, courses, and tests, which are displayed on the student dashboard. My contributions included developing update forms for tests, modifying APIs based on requirements, and ensuring responsiveness for exam, course, and test creation and update forms.",
         technologiesUsed:"React JS, node JS"
     },
+    {
+        sNo:"03",
+        sName:"Admin Dashboard",
+        sDesc:"An educational dashboard that allows admins to create exams, courses, and tests, which are displayed on the student dashboard. My contributions included developing update forms for tests, modifying APIs based on requirements, and ensuring responsiveness for exam, course, and test creation and update forms.",
+        technologiesUsed:"React JS, node JS"
+    },
     
 ]
 export default ServiceData;

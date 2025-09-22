@@ -8,7 +8,9 @@ const Footer = () => {
         <div className='footerTop'>
           <div>
             <h1>Veena Ragi</h1>
-            <p>I am a web developer with 6 months of experience.
+            <p>
+              {/* I am a web developer with 1.6 years of experience. */}
+              I don’t just code — I debug, optimize, and deliver growth.
             </p>
           </div>
           <div className='footerTopRight'>
