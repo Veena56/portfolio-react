@@ -12,9 +12,9 @@ const Services = () => {
             <h3> {item.pNo}</h3>
               <h2>{item.pName}</h2>
               <p>{item.pDesc}</p>
-              <div className='servicesReadmore'>
+              {/* <div className='servicesReadmore'>
                 <p style={{fontWeight:"600"}}>{item.technologiesUsed}</p>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

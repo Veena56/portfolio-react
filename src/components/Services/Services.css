@@ -17,7 +17,7 @@
     padding: 1rem;
     border: 1px solid white;
     border-radius: 15px;
-    height: 382px;
+    height: 350px;
 }
 .serviceFormat:hover{
     /* border: 2px solid rgba(2,0,36,1) ; */
@@ -31,6 +31,9 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
+}
+.servicesTitle h1{
+    font-size: 21px;
 }
 .servicesContainer {
         display: flex;
