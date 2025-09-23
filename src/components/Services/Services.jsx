@@ -1,17 +1,17 @@
 import React from 'react';
 import './Services.css'
-import ServiceData from './ServiceData';
+import ProjectData from './ProjectData';
 const Services = () => {
   return (
     <div className='services' id='Services'>
       <div className='servicesTitle'>
-        <h1>My Services</h1>
+        <h1>My Projects</h1>
         <div className='servicesContainer'>
-          {ServiceData.map((item,index)=>(
+          {ProjectData.map((item,index)=>(
             <div key={index} className='serviceFormat'>
-            <h3> {item.sNo}</h3>
-              <h2>{item.sName}</h2>
-              <p>{item.sDesc}</p>
+            <h3> {item.pNo}</h3>
+              <h2>{item.pName}</h2>
+              <p>{item.pDesc}</p>
               <div className='servicesReadmore'>
                 <p style={{fontWeight:"600"}}>{item.technologiesUsed}</p>
               </div>

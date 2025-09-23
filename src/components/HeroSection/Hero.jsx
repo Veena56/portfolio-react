@@ -34,7 +34,6 @@ const Hero = () => {
         <button className='connectButton' onClick={() => handleSetMenu("Contact")}>Connect With Me</button>
         <button className='myResumeButton' onClick={handleViewPdf} >My Resume</button>
       </div>
-
     </div>
   );
 }
