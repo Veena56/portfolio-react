@@ -15,13 +15,13 @@ const ProjectData = [
         pNo: "03",
         pName: "BITSAT Online Test Series Optimization",
         pDesc: "A Test Series platform where I refactored the code to fix memory leaks and functionality issues, reducing CPU usage from 50% to 10% during Azure testing. After these fixes, students were able to smoothly write tests on the platform, which significantly improved user experience and contributed to business growth.",
-        technologiesUsed: "React JS, node JS"
+        technologiesUsed: "React JS, node JS, MYSQL"
     },
     {
         pNo: "04",
         pName: "GATE PG Online Test Series",
         pDesc: "Implemented dynamic optional sections and admin-controlled test creation, leading a 3-member team. Developed a resume feature for test continuity and a regex-based scientific calculator matching GATE standards.",
-        technologiesUsed: "React JS, node JS"
+        technologiesUsed: "React JS, node JS, MYSQL"
     },
     {
         pNo: "05",
