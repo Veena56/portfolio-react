@@ -1,5 +1,7 @@
 import React from 'react';
 import { GoPerson } from "react-icons/go";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
 import './Footer.css'
 const Footer = () => {
   return (
@@ -27,9 +29,12 @@ const Footer = () => {
             © 2024 Veena Ragi. All rights reserved.
           </p>
           <div className='footerBottomRight'>
-            <p>Term of Services</p>
-            <p>Privacy Policy</p>
-            <p>Connect With Me</p>
+            <a >
+              <FaLinkedin />
+            </a>
+            <a>
+              <FaGithub />
+            </a>
 
           </div>
 

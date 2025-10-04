@@ -82,8 +82,11 @@ button{
     height: 100%;
     /* border-radius: 50%; */
 }
-.profileTextDiv{
-    width: 50%;
+.profileTextDiv {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .profileImgDiv{
     height: 200px;

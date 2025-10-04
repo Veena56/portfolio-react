@@ -59,8 +59,12 @@ padding-right: 80px;
 }
 .footerBottomRight{
     display: flex;
-    gap: 50px;
+    gap: 1rem;
     margin-bottom: 50px;
+}
+.footerBottomRight svg{
+    font-size: 27px;
+    color: #13447f;
 }
 .footerWithEmailInput:hover{
     /* border: 1px solid white; */

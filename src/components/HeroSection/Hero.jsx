@@ -78,22 +78,18 @@ const Hero = () => {
   };
   return (
     <div className='hero' id='Home'>
-      <div className='profileImgDiv'>
+      {/* <div className='profileImgDiv'>
         <img src={passPortPic} alt='noProPic' className='profileImg'></img>
-      </div>
+      </div> */}
       <div className='profileTextDiv'>
       <p><span>Hi! I'm Veena Ragi</span> </p>
-        {/* - A passionate {} */}
-        {/* <p> */}
         <span className="typing">- {text}</span>
-        {/* Full Stack Developer */}
-        {/* </p> */}
       <p>
-      with 
-        { } experience in building scalable, responsive web applications.
+      {/* with  */}
+        {/* { } experience in building scalable, responsive web applications. */}
+        Building Scalable, High-Performance Web Solutions.
       </p>
       <p>
-        {/* I love solving problems, writing clean code, and turning ideas into impactful digital products. */}
         I don’t just code — I debug, optimize, and deliver growth.
       </p>
       <div className='resumeButtonContainer'>

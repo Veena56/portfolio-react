@@ -11,7 +11,7 @@ const Services = () => {
             <div key={index} className='serviceFormat'>
             <h3> {item.pNo}</h3>
               <h2>{item.pName}</h2>
-              <p>{item.pDesc}</p>
+              <p dangerouslySetInnerHTML={{__html:item.pDesc}}></p>
               {/* <div className='servicesReadmore'>
                 <p style={{fontWeight:"600"}}>{item.technologiesUsed}</p>
               </div> */}

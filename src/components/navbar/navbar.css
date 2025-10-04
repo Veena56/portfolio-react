@@ -106,7 +106,6 @@ body{
 .navConnect{
     padding: 10px 20px;
     border-radius: 20px;
-    background:linear-gradient(212deg, rgba(2,0,36,1) 0%, rgba(32,32,196,1) 6%, rgba(0,212,255,1) 78%);
     border: 1px solid;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
@@ -114,6 +113,8 @@ body{
     font-style: normal;
     color: white;
     transition: 0.3s ease-in-out;
+    margin-right: 1rem;
+    background-color: transparent;
 }
 .navConnect:hover{
     transform: scale(1.03)  ;

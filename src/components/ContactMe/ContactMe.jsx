@@ -91,29 +91,37 @@ const ContactMe = () => {
                             <GrLocation />
                             <a href='https://maps.app.goo.gl/t5RjRMs4q5QfsN9b8' target='_blank'>  Shivam Road, Tarnaka, Hyderabad.</a>
                         </div>
-                        <div className='contactDetails'>
+                        {/* <div className='contactDetails'>
                             <IoCallOutline />
                             <a href='tel: +916309167613'>+91 6309167613</a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <form className='contactRight' onSubmit={(e) => handleSubmit(e)}>
-                    <label>Your Name: <span>*</span></label>
-                    <input type='text' placeholder='Enter your name' name='name'
-                        onChange={handleFormChange}
-                    />
-                    {errors && errors?.name}
-                    <label>Your Email: <span>*</span></label>
-                    <input type='email' name='email' placeholder='Enter your mail' onChange={handleFormChange} />
-                    {errors && errors?.email}
-                    <label>Write your message here:<span>*</span></label>
-                    <textarea name='message' cols={8} placeholder='Enter your message here' onChange={handleFormChange}></textarea>
-                    {errors && errors?.message}
+                    <div className='partitionDiv'>
+                        <div className='formLabelDiv'>
+                            <label>Your Name: <span>*</span></label>
+                            <input type='text' placeholder='Enter your name' name='name'
+                                onChange={handleFormChange}
+                            />
+                            {errors && errors?.name}
+                        </div>
+                        <div className='formLabelDiv' >
+                            <label>Your Email: <span>*</span></label>
+                            <input type='email' name='email' placeholder='Enter your mail' onChange={handleFormChange} />
+                            {errors && errors?.email}
+                        </div>
+                    </div>
+                    <div className='messageDiv'>
+                        <label>Write your message here:<span>*</span></label>
+                        <textarea name='message' cols={8} placeholder='Enter your message here' onChange={handleFormChange}></textarea>
+                        {errors && errors?.message}
+                    </div>
                     {/* <button className='submitButton' disabled={loading} type='submit'>Submit</button> */}
                     <button className='submitButton' disabled={loading} type='submit'>
                         {loading ? (
                             <>
-                            Sending...
+                                Sending...
                                 <span className='spinner'>
                                 </span>
                             </>

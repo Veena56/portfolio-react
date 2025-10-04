@@ -20,11 +20,12 @@ p {
       font-size: 0.98rem; /* ~19px */
     }
   }
-  
+  p {
+    line-height: 1.7;
+}
   /* large devices: 1024px and up */
   @media (min-width: 1024px) {
-    p {
-    }
+ 
   }
   
   /* extra large screens: 1440px and up */
