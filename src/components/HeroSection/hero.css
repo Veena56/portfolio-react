@@ -10,6 +10,7 @@ button{
     margin-top: 6rem;
     border-bottom: 2px solid gainsboro;
     padding-bottom: 2rem;
+    flex-wrap: wrap;
 }
 .hero {
     display: flex;
@@ -92,7 +93,12 @@ button.myResumeButton {
 background: white;
 }   
 @media (max-width: 768px) {
-   
+    .profileTextDiv {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .typing{
     margin-left: 2rem;
