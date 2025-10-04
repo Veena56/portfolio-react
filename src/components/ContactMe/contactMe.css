@@ -13,11 +13,11 @@
 }
 .contactTitle{
     margin-top: 20px;
-    font-size: 35px;
-    background:linear-gradient(212deg, rgba(2,0,36,1) 0%, rgba(32,32,196,1) 6%, rgba(0,212,255,1) 78%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 21px;
+    /* background: #065cc2; */
+    /* -webkit-background-clip: text; */
+    /* background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
     font-weight: 600;
 }
 .contactLeft {
@@ -27,14 +27,8 @@
     padding-left: 20px;
 }
 .contactLeft h1{
-    font-size: 35px;
+    font-size: 21px;
     font-weight: 500;
-    background:linear-gradient(212deg, rgba(2,0,36,1) 0%, rgba(32,32,196,1) 6%, rgba(0,212,255,1) 78%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-
 }
 .contactLeft p{
     max-width: 550px;
@@ -73,9 +67,19 @@ form.contactRight,.contactSection {
     align-items: center;
     gap: 20px;
 }
+form.contactRight {
+    max-width: 430px;
+    border: 1px solid gainsboro;
+    padding: 2rem;
+    background-color: #dcdcdc0a;
+}
 .contactDetails {
     display: flex;
     gap: 20px;
+}
+.contactDetails a{
+    color: unset;
+    text-decoration: unset;
 }
 .contactRight{
     display: flex;
@@ -108,7 +112,7 @@ form.contactRight,.contactSection {
     border: none;
     color: white;
     border-radius: 50px;
-    background:linear-gradient(212deg, rgba(2,0,36,1) 0%, rgba(32,32,196,1) 6%, rgba(0,212,255,1) 78%);
+    background:#065cc2;
     font-size: 22px;
     padding: 10px 40px;
     cursor: pointer;    

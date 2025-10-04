@@ -3,7 +3,7 @@ import './Services.css'
 import ProjectData from './ProjectData';
 const Services = () => {
   return (
-    <div className='services' id='Services'>
+    <div className='services' id='myProjects'>
       <div className='servicesTitle'>
         <h1>My Projects</h1>
         <div className='servicesContainer'>

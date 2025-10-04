@@ -2,16 +2,23 @@
     margin: 0;
     padding: 0;
 }
+button{
+    background-color: #065cc2;
+}
 #Home{
     scroll-margin-top: 90px;
+    margin-top: 6rem;
+    border-bottom: 2px solid gainsboro;
+    padding-bottom: 2rem;
 }
-.hero{
+.hero {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row-reverse;
     margin-top: 91px;
-
+    gap: 2rem;
+    padding: 0 2rem;
 }
 .hero p{
     padding-left: 20px;
@@ -36,15 +43,19 @@
 }
 .myResumeButton{
     background: transparent;
-    padding: 12px !important;
+    /* padding: 12px !important; */
+    border: 2px solid #065cc2;
+    color: #065cc2;
+    font-weight: 500;
 }
 .myResumeButton:hover{
-    border: 2px solid rgba(32,32,196,1);
+    background-color: #065cc2;
+    color: white;
 }
 .connectButton{
     padding: 10px 20px;
     border-radius: 20px;
-    background:linear-gradient(212deg, rgba(2,0,36,1) 0%, rgba(32,32,196,1) 6%, rgba(0,212,255,1) 78%);
+    /* background:linear-gradient(212deg, rgba(2,0,36,1) 0%, rgba(32,32,196,1) 6%, rgba(0,212,255,1) 78%); */
     border: 1px solid;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
@@ -59,15 +70,19 @@
 .hero span{
     font-weight: bold;
     font-size: 20px;
-    background:linear-gradient(212deg, rgba(2,0,36,1) 0%, rgba(32,32,196,1) 6%, rgba(0,212,255,1) 78%);
+    /* background:linear-gradient(212deg, rgba(2,0,36,1) 0%, rgba(32,32,196,1) 6%, rgba(0,212,255,1) 78%); */
     -webkit-background-clip: text;
+    background-color: #065cc2;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .profileImg{
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+}
+.profileTextDiv{
+    width: 50%;
 }
 .profileImgDiv{
     height: 200px;
@@ -79,3 +94,17 @@ background: white;
 @media (max-width: 768px) {
    
 }
+.typing{
+    margin-left: 2rem;
+}
+.typing::after {
+    content: "|";
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  

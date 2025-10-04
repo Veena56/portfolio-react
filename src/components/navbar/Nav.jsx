@@ -34,7 +34,7 @@ const Navbar = () => {
       <ul className='navMenu' ref={menuRef}>
         <li onClick={(e) => handleSetMenu("Home",e)}><a href='home'><p className={menu === "Home" ? "underLine" : ""} >Home</p></a></li>
         <li onClick={(e) => handleSetMenu("AboutMe",e)}> <a href='about'><p className={menu === "AboutMe" ? "underLine" : ""} >About Me</p></a></li>
-        <li onClick={(e) => handleSetMenu("Services",e)}><a href='services'><p className={menu === "Services" ? "underLine" : ""} >Services</p></a></li>
+        <li onClick={(e) => handleSetMenu("myProjects",e)}><a href='myProjects'><p className={menu === "myProjects" ? "underLine" : ""} >My Projects</p></a></li>
         {/* <li onClick={(e) => handleSetMenu("Portfolio",e)}><a href='portfolio'><p className={menu === "Portfolio" ? "underLine" : ""} >Portfolio</p></a></li> */}
        <li onClick={(e) => handleSetMenu("Contact",e)}> <a href='contactMe'><p className={menu === "Contact" ? "underLine" : ""} >Contact</p></a></li> 
       </ul>

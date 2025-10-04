@@ -19,9 +19,6 @@ const Footer = () => {
               <input type='email' placeholder='Enter your email' />
             </div>
             <div className='footerSubscribeBtn'>Subscribe</div>
-
-
-
           </div>
         </div>
         <hr />

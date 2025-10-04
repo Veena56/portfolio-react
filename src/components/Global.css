@@ -1,0 +1,35 @@
+/* Global CSS */
+@media (min-width:768px) {
+    
+}
+/* base font for very small screens (default) */
+p {
+    font-size: 0.9rem; /* 16px if 1rem = 16px */
+  }
+  
+  /* small devices: 600px and up */
+  @media (min-width: 600px) {
+    p {
+      font-size: 0.8rem; /* ~17-18px */
+    }
+  }
+  
+  /* medium devices: 768px and up */
+  @media (min-width: 768px) {
+    p {
+      font-size: 0.98rem; /* ~19px */
+    }
+  }
+  
+  /* large devices: 1024px and up */
+  @media (min-width: 1024px) {
+    p {
+    }
+  }
+  
+  /* extra large screens: 1440px and up */
+  @media (min-width: 1440px) {
+    p {
+    }
+  }
+  

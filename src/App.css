@@ -1,3 +1,9 @@
-p{
-    /* color: black; */
+
+h1,h2,h3{
+    color: #13447f;
+}
+button{
+    background-color: #065cc2;
+    font-size: 18px;
+    background: #065cc2;
 }

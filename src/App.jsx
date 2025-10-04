@@ -1,4 +1,5 @@
 import './App.css';
+import './components/Global.css';
 import About from './components/About/About';
 import ContactMe from './components/ContactMe/ContactMe';
 import Footer from './components/Footer/Footer';

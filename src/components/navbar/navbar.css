@@ -6,8 +6,10 @@
 }
 body{
     height: 100vh;
-    background: #161513;
-    color: white;
+    /* background: #161513; */
+    background-color: #F8F9FA;
+    /* color: white; */
+    color:#212529;
     font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
 }
@@ -17,6 +19,7 @@ body{
 }
 .navBar {
     display: flex;
+    z-index: 11;
     align-items: center;
     justify-content: space-between;
     /* margin: 10px; */
@@ -29,7 +32,8 @@ body{
     top: 0;
     height: 50px;
     width: 100%;
-    background-color: #161513;
+    /* background-color: #161513; */
+    background-color: #314862;
 }
 
 .navMenu{
@@ -152,6 +156,7 @@ svg.menuOpen {
         position: absolute;
         top: 18px;
         right: 43px;
+        color: white;
     }
     svg.menuOpen.hide {
       opacity: 0;

@@ -28,7 +28,7 @@ display: flex;
 gap: 30px;
 padding: 20px 30px;
 border-radius: 50px;
-background: #32323B;
+border:1px solid #32323B;
 padding-right: 80px;
 /* flex-wrap: wrap; */
 
@@ -38,7 +38,7 @@ padding-right: 80px;
     border: none;
     background: transparent;
     /* color: #a0a0a0; */
-    color: white;
+    /* color: white; */
     /* font-size: 10px; */
     transition: border 0.3s ease-in-out;
 }
@@ -46,8 +46,6 @@ padding-right: 80px;
     font-size: 16px;
     padding: 10px 20px ;
     border-radius: 50px;
-    /* background: linear-gradient(); */
-    background:linear-gradient(212deg, rgba(2,0,36,1) 0%, rgba(32,32,196,1) 6%, rgba(0,212,255,1) 78%);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -65,7 +63,7 @@ padding-right: 80px;
     margin-bottom: 50px;
 }
 .footerWithEmailInput:hover{
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 .footerSubscribeBtn:hover{
     transform: scale(1.05);

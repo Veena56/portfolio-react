@@ -1,10 +1,70 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './hero.css';
-import profileImg from '../assets/PortFolioProfile.jpeg';
-import passPortPic from '../assets/PassPortAI.png';
+import passPortPic from '../assets/VeenaProfileCropped3.png';
 
 const Hero = () => {
+  const texts=["Full Stack Developer", "Debugging Expert", "Problem Solver"];
+  const [text, setText]=useState("");
+  const[count,setCount]=useState(0);
+  const[index,setIndex]=useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  // useEffect(()=>{
+  //   const currentText=texts[index];
+  //   let typingSpeed = isDeleting ? 50 : 120;
+  //   const timeout=setTimeout(() => {
+  //     if(!isDeleting){
+  //       setText(currentText.substring(0,count+1));
+  //       setCount(count+1);
+  //       if(count+1===currentText.length){
+  //         setIsDeleting(true);
+  //       }
+  //     }
+  //     else{
+  //       setText(currentText.substring(0,count-1));
+  //       setCount(count-1);
+  //       if(count-1===0){
+  //         setIsDeleting(false);
+  //         setIndex((index+1)%texts.length);
+  
+  //       }
+  //     }
+  //   })
+  //   return ()=>clearTimeout(timeout)
+  //   },[count,isDeleting,index,texts]);
+
+
+
   // const myResume = '/Resume-Veena Ragi.pdf';
+  
+  useEffect(() => {
+    const currentText = texts[index];
+    let typingSpeed = isDeleting ? 50 : 120; // faster delete, slower type
+
+    const timeout = setTimeout(() => {
+      if (!isDeleting) {
+        // typing
+        setText(currentText.substring(0, count + 1));
+        setCount(count + 1);
+
+        if (count + 1 === currentText.length) {
+          // pause before deleting
+          setTimeout(() => setIsDeleting(true), 1000);
+        }
+      } else {
+        // deleting
+        setText(currentText.substring(0, count - 1));
+        setCount(count - 1);
+
+        if (count - 1 === 0) {
+          setIsDeleting(false);
+          setIndex((index + 1) % texts.length); // move to next word
+        }
+      }
+    }, typingSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [count, isDeleting, index, texts]);
+
   const handleSetMenu = (attribute) => {
     console.log(attribute, "this is what we are setting");
     // setMenu(attribute)
@@ -21,10 +81,16 @@ const Hero = () => {
       <div className='profileImgDiv'>
         <img src={passPortPic} alt='noProPic' className='profileImg'></img>
       </div>
-      <p><span>Hi! I'm Veena Ragi</span>
-        - A passionate Full Stack Developer with 
-        {/* ~2 years of */}
-        {} experience in building scalable, responsive web applications.
+      <div className='profileTextDiv'>
+      <p><span>Hi! I'm Veena Ragi</span> </p>
+        {/* - A passionate {} */}
+        {/* <p> */}
+        <span className="typing">- {text}</span>
+        {/* Full Stack Developer */}
+        {/* </p> */}
+      <p>
+      with 
+        { } experience in building scalable, responsive web applications.
       </p>
       <p>
         {/* I love solving problems, writing clean code, and turning ideas into impactful digital products. */}
@@ -33,6 +99,7 @@ const Hero = () => {
       <div className='resumeButtonContainer'>
         <button className='connectButton' onClick={() => handleSetMenu("Contact")}>Connect With Me</button>
         <button className='myResumeButton' onClick={handleViewPdf} >My Resume</button>
+      </div>
       </div>
     </div>
   );

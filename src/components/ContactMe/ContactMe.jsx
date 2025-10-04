@@ -75,9 +75,9 @@ const ContactMe = () => {
     }
     return (
         <div className='contactMe' id='Contact'>
-            <div className='contactTitle'>
+            <h1 className='contactTitle'>
                 Get in touch
-            </div>
+            </h1>
             <div className='contactMeSubDiv'>
                 <div className='contactSection'>
                     <div className='contactLeft'>
@@ -85,15 +85,15 @@ const ContactMe = () => {
                         <p>I'm currently open to new projects, so please feel free to reach out!</p>
                         <div className='contactDetails'>
                             <FiMail />
-                            <p>veena.raagi@gmail.com</p>
+                            <a href='mailto:veena.raagi@gmail.com?subject=Inquiry from Portfolio'>veena.raagi@gmail.com</a>
                         </div>
                         <div className='contactDetails'>
                             <GrLocation />
-                            <p>  Shivam Road, Tarnaka, Hyderabad.</p>
+                            <a href='https://maps.app.goo.gl/t5RjRMs4q5QfsN9b8' target='_blank'>  Shivam Road, Tarnaka, Hyderabad.</a>
                         </div>
                         <div className='contactDetails'>
                             <IoCallOutline />
-                            <p>+91 6309167613</p>
+                            <a href='tel: +916309167613'>+91 6309167613</a>
                         </div>
                     </div>
                 </div>
