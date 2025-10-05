@@ -29,10 +29,10 @@ const Footer = () => {
             © 2024 Veena Ragi. All rights reserved.
           </p>
           <div className='footerBottomRight'>
-            <a >
+            <a href='https://www.linkedin.com/in/veena-ragi/'>
               <FaLinkedin />
             </a>
-            <a>
+            <a >
               <FaGithub />
             </a>
 

@@ -9,6 +9,7 @@
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    background-color: #f7faff;
 
 }
 .contactTitle{
@@ -39,6 +40,8 @@
     display: flex;
     gap: 30px;
     align-items: center;
+    text-decoration: none;
+    color: unset;
 }
 .contactDetails svg{
     font-size: 22px;
@@ -51,22 +54,27 @@
 }
 .contactMeSubDiv {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
     align-items: start;
     justify-content: center;
-    width: 95%;
     margin: 0 auto;
     gap: 2rem;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    /* background-color: white; */
 }
 form.contactRight, .contactSection {
-    width: 90%;
+    /* width: 90%; */
     display: flex;
-    align-items: center;
+    align-items: start;
     margin: 0 auto;
     /* background-color: gainsboro; */
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
     padding: 2rem;
+    max-width: 450px;
+    min-height: 550px;
+}
+form.contactRight{
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+
 }
 .contactRight{
     display: flex;
@@ -78,17 +86,22 @@ form.contactRight, .contactSection {
     display: flex;
     margin-bottom: 1rem;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
 }
+
 .partitionDiv{
     display: flex;
     align-items: center;
     justify-content: center;
     width: inherit;
     gap: 16px;
+    flex-wrap: wrap;
+
 }
-.messageDiv{
-    width: 90%;
+.messageDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 form.contactRightc {
     max-width: 430px;
@@ -109,24 +122,27 @@ form.contactRightc {
     align-items: start;
     flex-direction: column;
     gap: 20px;
+    background-color: white;
+    border-radius: 10px;
 }
 
-.contactRight label{
+.contactRight label, .messageDiv label{
     font-weight: 500;
     font-size: 20px;
-    margin-bottom: 2rem ;
+    margin-bottom: 8px ;
     /* color:  rgba(32,32,196,1); */
 }
 .contactRight input{
-    border: none;
+    border: 1.5px solid gainsboro;
     /* width: 700px; */
     height: 48px;
     padding-left: 20px;
     border-radius: 4px;
-    width: 85%;
+    /* width: 85%; */
+
 }
 .contactRight textarea{
-    border: none;
+    border: 1px solid gainsboro;
     padding: 18px;
     width: 91%;
     height:80px;
@@ -146,6 +162,11 @@ form.contactRightc {
     transform: scale(1.05);
     transition: 0.2s ease-in-out;
 }
+.contactSection {
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 /* Spinner rotates only itself */
 .spinner {
     width: 16px;
@@ -160,5 +181,24 @@ form.contactRightc {
   @keyframes spin {
     to {
       transform: rotate(360deg);
+    }
+  }
+  @media (max-width:768px) {
+    .contactMeSubDiv{
+        flex-wrap: wrap;
+    }
+    form.contactRight, .contactSection{
+        width: 100%;
+        max-width: unset;
+        padding: 1rem;
+    }
+
+  }
+  @media (max-width:600px) {
+    .formLabelDiv{
+        width: 100%;
+    }
+    .partitionDiv{
+        flex-wrap: wrap;
     }
   }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FiMail } from "react-icons/fi";
 import { GrLocation } from "react-icons/gr";
 import './contactMe.css'
+import { FaLinkedin } from "react-icons/fa6";
 import { IoCallOutline } from "react-icons/io5";
 const ContactMe = () => {
     const [loading, setLoading] = useState("");
@@ -75,22 +76,28 @@ const ContactMe = () => {
     }
     return (
         <div className='contactMe' id='Contact'>
-            <h1 className='contactTitle'>
-                Get in touch
-            </h1>
+
             <div className='contactMeSubDiv'>
                 <div className='contactSection'>
                     <div className='contactLeft'>
-                        <h1>Let's talk</h1>
-                        <p>I'm currently open to new projects, so please feel free to reach out!</p>
-                        <div className='contactDetails'>
+                        <h1>Let's Connect!</h1>
+                        <p>I’m open to exciting frontend or full-stack projects and always up for tech collaborations.
+                        </p>
+                        <p>
+                            Drop me an email or connect with me on LinkedIn — let’s build something impactful together!
+                        </p>
+                        <a className='contactDetails'href='mailto:veena.raagi@gmail.com?subject=Inquiry from Portfolio' rel='noreferrer noopener'>
                             <FiMail />
-                            <a href='mailto:veena.raagi@gmail.com?subject=Inquiry from Portfolio'>veena.raagi@gmail.com</a>
-                        </div>
-                        <div className='contactDetails'>
+                            <span>veena.raagi@gmail.com</span>
+                        </a>
+                        <a className='contactDetails' target='_blank' href='https://maps.app.goo.gl/t5RjRMs4q5QfsN9b8' rel='noreferrer noopener'>
                             <GrLocation />
-                            <a href='https://maps.app.goo.gl/t5RjRMs4q5QfsN9b8' target='_blank'>  Shivam Road, Tarnaka, Hyderabad.</a>
-                        </div>
+                            <span>  Shivam Road, Tarnaka, Hyderabad.</span>
+                        </a>
+                        <a className='contactDetails' href='https://www.linkedin.com/in/veena-ragi/' target='_blank' rel='noreferrer noopener'>
+                        <FaLinkedin />
+                        <span>LinkedIn</span>
+                        </a>
                         {/* <div className='contactDetails'>
                             <IoCallOutline />
                             <a href='tel: +916309167613'>+91 6309167613</a>
@@ -98,8 +105,13 @@ const ContactMe = () => {
                     </div>
                 </div>
                 <form className='contactRight' onSubmit={(e) => handleSubmit(e)}>
+                    <h1 className='contactTitle'>
+                        Get in touch
+                    </h1>
                     <div className='partitionDiv'>
+
                         <div className='formLabelDiv'>
+
                             <label>Your Name: <span>*</span></label>
                             <input type='text' placeholder='Enter your name' name='name'
                                 onChange={handleFormChange}
