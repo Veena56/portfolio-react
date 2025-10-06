@@ -9,7 +9,7 @@ const Footer = () => {
       <div className='footer'>
         <div className='footerTop'>
           <div>
-            <h1>Veena Ragi</h1>
+            <h1 className='nameInFooter'>Veena Ragi</h1>
             <p>
               {/* I am a web developer with 1.6 years of experience. */}
               I don’t just code — I debug, optimize, and deliver growth.
@@ -26,13 +26,13 @@ const Footer = () => {
         <hr />
         <div className='footerBottom'>
           <p className='footerBottomLeft'>
-            © 2024 Veena Ragi. All rights reserved.
+            © 2025 Veena Ragi. All rights reserved.
           </p>
           <div className='footerBottomRight'>
-            <a href='https://www.linkedin.com/in/veena-ragi/'>
+            <a href='https://www.linkedin.com/in/veena-ragi/'  rel="noopener noreferrer">
               <FaLinkedin />
             </a>
-            <a >
+            <a href='https://github.com/Veena56' target='_blank'  rel="noopener noreferrer" >
               <FaGithub />
             </a>
 

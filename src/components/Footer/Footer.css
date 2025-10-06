@@ -1,17 +1,25 @@
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-
+    gap: 1rem;
+    background-color: #314862;
+    color: white;
+    margin-top: 2rem;
+}
+.nameInFooter{
+    color: white;
+    font-weight: 600;
+    font-size: 21px;
 }
 .footerTop {
     display: flex;
     justify-content: space-between;
-    width: 94%;
+    width: 98%;
     margin: 0 auto;
     margin-top: 2rem;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
+    /* padding: 0 15px; */
 }
 .footerTopLeft p{
 font-size: 20px;
@@ -26,9 +34,9 @@ max-width: 400px;
 .footerWithEmailInput{
 display: flex;
 gap: 30px;
-padding: 20px 30px;
+padding: 12px 20px;
 border-radius: 50px;
-border:1px solid #32323B;
+border:1px solid white;
 padding-right: 80px;
 /* flex-wrap: wrap; */
 
@@ -48,6 +56,7 @@ padding-right: 80px;
     border-radius: 50px;
     cursor: pointer;
     transition: 0.3s;
+    border: 1px solid white;
 }
 .footerBottom{
     display: flex;
@@ -64,7 +73,11 @@ padding-right: 80px;
 }
 .footerBottomRight svg{
     font-size: 27px;
-    color: #13447f;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+.footerBottomRight svg:hover{
+    transform:  scale(1.1);
 }
 .footerWithEmailInput:hover{
     /* border: 1px solid white; */
